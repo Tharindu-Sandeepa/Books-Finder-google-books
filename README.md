@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# BookFinder App 📚
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+BookFinder is a React-based web application that allows users to search, explore, and discover books using the powerful [Google Books API](https://developers.google.com/books). With an intuitive user interface and features like genre-based browsing and detailed book information, this app makes it easy to find your next great read.
 
-## Available Scripts
+## Features ✨
+- **Search for books:** Enter a query to search for books by title, author, or keywords.
+- **Browse by genres:** Quickly find books in your favorite genre.
+- **View book details:** Get comprehensive details about the books, including descriptions, authors, and more.
+- **Random book quotes:** Get inspired with a new book-related quote displayed dynamically.
 
-In the project directory, you can run:
+---
+## Technologies Used 🛠️
+- React: Frontend library
+- Google Books API: Book data source
+- Tailwind CSS: Styling framework
+- Axios: API requests
 
-### `npm start`
+## Screenshots 📷
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. **Home Page**
+The Home Page provides an intuitive search bar and a selection of genres for quick browsing.
+![Home Page](./screenshots/home.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+### 2. **Book List Page**
+Once a search is performed, the app displays a list of books matching the query. The books are neatly organized with pagination for easy navigation.
+![Book List Page](./screenshots/booklist.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### 3. **Details Page**
+Clicking on a book from the list leads to the Details Page, showcasing more information about the selected book.
+![Details Page](./screenshots/detailspage.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
+## Env
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To access the Google Books API, you need to set up an `.env` file in the root directory of your project with the following key:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```plaintext
+REACT_APP_GOOGLE_BOOKS_API_KEY=your_google_books_api_key
