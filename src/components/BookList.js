@@ -5,7 +5,7 @@ import Pagination from './Pagination';
 const BookList = ({ books }) => {
   
   const [currentPage, setCurrentPage] = useState(1);
-  const booksPerPage = 8;
+  const booksPerPage = 9;
 
   if (!books || !books.length) return <p className="text-center">No books found.</p>;
 
